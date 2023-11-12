@@ -106,13 +106,7 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
-  -- comments support - type gcc
-  use({
-    "numToStr/Comment.nvim",
-    config = function()
-      require("Comment").setup()
-    end,
-  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
