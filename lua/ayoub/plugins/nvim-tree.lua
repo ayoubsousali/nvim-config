@@ -37,9 +37,6 @@ nvimtree.setup({
   git = {
     ignore = false,
   },
-  filters = {
-    dotfiles = true,
-  },
 })
 
 -- open nvim-tree on setup
