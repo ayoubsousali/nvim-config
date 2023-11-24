@@ -106,6 +106,8 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  -- wakatime
+  use("wakatime/vim-wakatime")
 
   if packer_bootstrap then
     require("packer").sync()
