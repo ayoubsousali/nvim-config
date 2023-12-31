@@ -99,7 +99,8 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
-
+  -- jsx comments support
+  use("JoosepAlviste/nvim-ts-context-commentstring")
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
