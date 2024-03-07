@@ -33,7 +33,7 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-  use("dracula/vim") -- colorscheme
+  use("rose-pine/neovim") -- colorscheme
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -77,7 +77,7 @@ return packer.startup(function(use)
   use("neovim/nvim-lspconfig") -- easily configure language servers
   use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
   use({
-    "glepnir/lspsaga.nvim",
+    "nvimdev/lspsaga.nvim",
     branch = "main",
     requires = {
       { "nvim-tree/nvim-web-devicons" },
