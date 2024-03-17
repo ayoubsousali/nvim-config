@@ -95,6 +95,12 @@ lspconfig["intelephense"].setup({
   filetypes = { "php" },
 })
 
+-- elixir
+require("lspconfig").elixirls.setup({
+  cmd = { "/Users/ayoub/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+  on_attach = on_attach,
+})
+
 -- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
   capabilities = capabilities,
