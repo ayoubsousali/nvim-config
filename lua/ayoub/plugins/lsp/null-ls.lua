@@ -27,6 +27,12 @@ null_ls.setup({
         return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
       end,
     }),
+    -- golang
+    -- ref video : https://youtu.be/i04sSQjd-qo
+    -- install these formatter with homebrew
+    formatting.gofumpt,
+    formatting.goimports_reviser,
+    formatting.golines,
   },
   -- configure format on save
   on_attach = function(current_client, bufnr)
