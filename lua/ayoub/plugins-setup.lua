@@ -110,6 +110,15 @@ return packer.startup(function(use)
   -- wakatime
   use("wakatime/vim-wakatime")
 
+  -- lazygit
+  use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
