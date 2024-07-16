@@ -110,7 +110,7 @@ ins_left({
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
-  padding = { right = 1 },
+  padding = { left = 1, right = 1 },
 })
 
 --[[ ins_left({ ]]
